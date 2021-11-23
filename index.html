@@ -1,17 +1,34 @@
- <!-- JAVASCRIPT -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Minha página</title>
 
-<!-- 
-    -Linguagem de script e multiplataforma
+    <!-- Javascript -->
+    <script src="/js/main.js"></script>
+</head>
 
-    -Client Side - è executado do lado do cliente(usuário)
+<!-- evento ao carregar a página -->
+<body onload="load()">
 
-    -Tem capacidade de interagir com elementos de uma página HTML
+    <!-- evento de click -->
+    <button type="button" onclick="clicou()">Clique aqui</button>
+    <p id="agradecimento" onclick="redirecionar()"></p>
 
-*DOM (Document Object Model)
+    <!-- onmouseover: evento ao passar o mouse -->
+    <!-- onmouseout: evento sem passar o mouse -->
+    <!-- o this se refere ao prorpio elemento -->
+    <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+    <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
 
-    DOM é documento que o navegador gera quando carrega a página 
+    <!-- coleta o valor dos elementos clicados -->
+    <select onchange="funcaoChange(this)">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
 
-    Gera um objetivo em arvore, onde possui os elemento HTML
-
-    Javascript pode alterar todos os elemento do HTML e todos os atributos e estilos de CSS de uma página  
--->
+</body>
+</html>
