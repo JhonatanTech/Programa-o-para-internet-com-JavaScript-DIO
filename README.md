@@ -1,4 +1,4 @@
- *JAVASCRIPT
+*JAVASCRIPT*
 
     -Linguagem de script e multiplataforma
 
@@ -6,7 +6,7 @@
 
     -Tem capacidade de interagir com elementos de uma página HTML
 
-**DOM (Document Object Model)
+**DOM (Document Object Model)**
 
     DOM é documento que o navegador gera quando carrega a página 
 
